@@ -82,19 +82,12 @@ modified - который был изменен относительно пос�
 Жизненный цикл файла  
  
 ```mermaid
-flowchart LR;
-    untracked("untracked 
-             (неотслеживаемый)") -->|изменения| staged;
-
-    staged("staged 
-          (в списке на коммит) 
-          + tracked") -->|git commit| tracked("tracked 
-                                        (отслеживаемый)");
-
-    modified("modified 
-            (измененный)") -->|git add| staged;
-
+graph LR;
+    untracked -->|git add| staged;
     tracked -->|изменения| modified;
+    staged -->|git commit| tracked;
+    modified -->|git add| staged;
+    staged -->|изменения| modified;
 
 ```
 
