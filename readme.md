@@ -49,6 +49,8 @@ git restore --staged example.txt(git restore --staged . - сбросит все 
 git reset --hard <commit hash> - откатить коммит(можно использовать короткий хэш коммита);      
 git restore <file> - откатит файл, которые не попали ни в staged, ни в коммит;  
 git diff <commit hash> <commit hash> - покажет что нового было добавлено между коммитами;  
+git diff - изменения последних коммитов;  
+git diff --staged - изм в sataged файлах;  
 
 
 
