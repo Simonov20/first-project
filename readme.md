@@ -175,4 +175,5 @@ flowchart TD;
 
 git merge --no-edit --no-ff branch_new - (--no-edit - без сообщения, --no-ff - без fast-forward слияния веток)  
 
-![Слияние без fast-forward](no fast-forward.png)  
+
+![Слияние без fast-forward](https://github.com/Simonov20/first-project/blob/branch_new/no%20fast-forward.png)  
