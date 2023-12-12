@@ -176,4 +176,12 @@ flowchart TD;
 git merge --no-edit --no-ff branch_new - (--no-edit - без сообщения, --no-ff - без fast-forward слияния веток)  
 
 
-![Слияние без fast-forward](https://github.com/Simonov20/first-project/blob/branch_new/no%20fast-forward.png)  
+![Слияние без fast-forward](https://github.com/Simonov20/first-project/blob/branch_new/no%20fast-forward.png)    
+
+Есть случай, если возникает конфликт при слиянии, то автоматом это не FF случай(происходит когда изменнеия в ветках произошли в одном и том же файле и строках).  
+коммит слияния - создается если истории двух веток «разошлись».  
+При объединении веток в состоянии не-fast-forward возможны (но не обязательны) конфликты. Если конфликты всё же возникли, Git попытается разрешить их самостоятельно.   
+
+
+В Git можно решить проблему «разошедшихся» веток с помощью операции rebase
+![rebase слияние веток](https://github.com/Simonov20/first-project/blob/branch_new/rebase.png)
